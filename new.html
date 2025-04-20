@@ -312,6 +312,69 @@
         );
         z-index: 1;
       }
+      .blog-section {
+        padding: 5rem 0;
+      }
+      .blog-section h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+      .blog-card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 1rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        height: 100%;
+        transition: transform 0.3s ease;
+      }
+      .blog-card:hover {
+        transform: translateY(-10px);
+      }
+      .blog-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .blog-card .category {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #304e6c;
+      }
+      .blog-card h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+      .faq-section {
+        padding: 5rem 0;
+      }
+      .faq-section h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+      .faq-section h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 2rem;
+      }
+      .faq-item {
+        margin-bottom: 1.5rem;
+      }
+      .faq-item .faq-question {
+        font-size: 1.25rem;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .faq-item .faq-answer {
+        display: none;
+        margin-top: 1rem;
+      }
+      .faq-item .faq-answer p {
+        margin-bottom: 1rem;
+      }
     </style>
   </head>
   <body>
@@ -357,12 +420,11 @@
     <!-- Hero Section with the mountain lake image -->
     <section class="hero-section">
       <img
-        src="jasper-lake-hero-banner.webp"
+        src="/api/placeholder/1920/1080"
         alt="Serene mountain lake with snow-capped peaks"
         class="hero-background"
       />
       <div class="hero-overlay"></div>
-      <centre>
       <div class="container">
         <div class="hero-content">
           <h1 class="hero-title">Calm your mind. Change your life.</h1>
@@ -374,7 +436,6 @@
           </p>
           <a href="#" class="btn btn-try-free">Try Calm for Free</a>
         </div>
-      </centre>
       </div>
     </section>
 
@@ -588,71 +649,321 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto text-center">
-            <h2 class="section-title">Ready to Start Your Journey?</h2>
-            <p class="lead mb-4">
-              Join millions of people finding peace and balance with Calm.
-            </p>
-            <a href="#" class="btn btn-try-free">Try Calm for Free</a>
-          </div>
+    <div class="container blog-section">
+      <div class="row text-center mb-5">
+        <div class="col-md-8 mx-auto">
+          <h2>
+            Check out our blog for more meditation, sleep, stress, and mental
+            health resources.
+          </h2>
         </div>
       </div>
-    </section>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="blog-card">
+            <a href="/blog/staycation">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/656f4e4dababbd7c042c4946/1743809866863-0BJQ4OVHF7MU5IFAXV6E/staycation-1x1.jpg"
+                alt="Thumbnail for Are staycations *actually* better than vacations for real rest?"
+              />
+              <div>
+                <span class="category">Mental Health</span>
+                <h3>
+                  Are staycations *actually* better than vacations for real
+                  rest?
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="blog-card">
+            <a href="/blog/work-life-balance">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/656f4e4dababbd7c042c4946/1743641883680-E589IY3H7PXVKUXJ4CAL/work-life+balance-1x1.jpg"
+                alt="Thumbnail for How to *actually* have a better work-life balance"
+              />
+              <div>
+                <span class="category">Workplace Wellness</span>
+                <h3>How to *actually* have a better work-life balance</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="blog-card">
+            <a href="/blog/menstrual-cycle-phases">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/656f4e4dababbd7c042c4946/1743641539635-94ZBWC3361FAADKWCXHA/menstrual+cycle+phases-1x1.jpg"
+                alt="Thumbnail for How the phases of your menstrual cycle affect mental health"
+              />
+              <div>
+                <span class="category">Women's Health</span>
+                <h3>
+                  How the phases of your menstrual cycle affect mental health
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Add more blog cards as needed -->
+      </div>
+      <div class="text-center mt-4">
+        <a href="https://calm.com/blog" class="btn btn-primary"
+          >See all blogs</a
+        >
+      </div>
+    </div>
+
+    <div class="container faq-section">
+      <div class="row text-center mb-5">
+        <div class="col-md-8 mx-auto">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>GENERAL</h3>
+          <div class="faq-item">
+            <div
+              class="faq-question"
+              data-toggle="collapse"
+              data-target="#faq1"
+            >
+              What is Calm?
+            </div>
+            <div id="faq1" class="collapse faq-answer">
+              <p>
+                Calm is the #1 mental health app designed to help you manage
+                stress, sleep better, and live a happier, healthier life. Our
+                research-based tools help you build life-changing habits to
+                support your mental health. If you're having trouble falling
+                asleep, our 500+ Sleep Stories®, soundscapes, and guided sleep
+                meditations can lull you to sleep. If you're spiraling in
+                negative thoughts and need immediate relief, our 60-second
+                Breathe Bubble grounds you in the moment and helps your body
+                return to a state of relaxation. If you're overwhelmed at work
+                and need a breather, our stress and burnout specialists can
+                guide you through exercises to help calm your mind. We're here
+                for you whenever or wherever you need us with more content and
+                tools being added monthly.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div
+              class="faq-question"
+              data-toggle="collapse"
+              data-target="#faq2"
+            >
+              What's included in a Calm subscription?
+            </div>
+            <div id="faq2" class="collapse faq-answer">
+              <p>
+                A Calm subscription unlocks our full library of meditations,
+                Sleep Stories, music, and other features. The subscription
+                includes:
+              </p>
+              <ul>
+                <li>
+                  Multiple original daily offerings from a range of teachers to
+                  give your day a dose of wisdom, gratitude and encouragement
+                </li>
+                <li>
+                  Hours of guided meditations covering sleep, anxiety, stress,
+                  gratitude, and much more
+                </li>
+                <li>
+                  Our entire library of more than 500+ Sleep Stories, with new
+                  stories added every week
+                </li>
+                <li>Exclusive music tracks for focus, relaxation, and sleep</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Add more FAQ items as needed -->
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer bg-dark text-white pt-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-            <h3 class="footer-title calm-logo">Calm</h3>
-            <p>The #1 app for sleep, meditation and relaxation.</p>
-            <div class="social-icons mt-3">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-            <h4 class="footer-title">Company</h4>
-            <ul class="footer-links">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Press</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+            <h2 class="footer-title calm-logo">Company</h2>
+            <ul class="footer-links list-unstyled">
+              <li>
+                <a
+                  href="https://www.calm.com/blog/about"
+                  class="text-decoration-none text-white"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.calm.com/careers"
+                  class="text-decoration-none text-white"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.calm.com/blog/press"
+                  class="text-decoration-none text-white"
+                  >Press</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.calm.com/mindfulness-tips"
+                  class="text-decoration-none text-white"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.calm.com/blog/tamara-levitt"
+                  class="text-decoration-none text-white"
+                  >Meet our Instructor</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.calm.com/science"
+                  class="text-decoration-none text-white"
+                  >Calm Science</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-            <h4 class="footer-title">Product</h4>
-            <ul class="footer-links">
-              <li><a href="#">Sleep</a></li>
-              <li><a href="#">Meditation</a></li>
-              <li><a href="#">Calm Health</a></li>
-              <li><a href="#">Business</a></li>
-              <li><a href="#">Schools</a></li>
+            <h2 class="footer-title">Offers</h2>
+            <ul class="footer-links list-unstyled">
+              <li>
+                <a
+                  href="https://www.calm.com/gift"
+                  class="text-decoration-none text-white"
+                  >Buy a Gift</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.calm.com/redeem"
+                  class="text-decoration-none text-white"
+                  >Redeem a Gift</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://health.calm.com/"
+                  class="text-decoration-none text-white"
+                  >Calm Health</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://health.calm.com/self-serve-checkout/"
+                  class="text-decoration-none text-white"
+                  >Calm for Organizations</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-            <h4 class="footer-title">Support</h4>
-            <ul class="footer-links">
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">Cookie Policy</a></li>
-              <li><a href="#">Accessibility</a></li>
+            <h2 class="footer-title">Help</h2>
+            <ul class="footer-links list-unstyled">
+              <li>
+                <a
+                  href="https://www.calm.com/faq/web"
+                  class="text-decoration-none text-white"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://support.calm.com/hc/en-us/requests/new"
+                  class="text-decoration-none text-white"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.calm.com/terms"
+                  class="text-decoration-none text-white"
+                  >Terms</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/privacy-policy"
+                  class="text-decoration-none text-white"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/privacy-policy#information-for-california-residents"
+                  class="text-decoration-none text-white"
+                  >CCPA Notice</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white"
+                  >Opt Out of Targeted Ads</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.calm.com/cookies"
+                  class="text-decoration-none text-white"
+                  >Cookies</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.calm.com/en/accessibility-statement"
+                  class="text-decoration-none text-white"
+                  >Accessibility Statement</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <ul class="social-icons list-unstyled d-flex justify-content-end">
+              <li class="me-3">
+                <a
+                  href="#"
+                  aria-label="Link to Calm's Facebook"
+                  class="text-white"
+                >
+                  <i class="fab fa-facebook-f fa-lg"></i>
+                </a>
+              </li>
+              <li class="me-3">
+                <a
+                  href="#"
+                  aria-label="Link to Calm's Instagram"
+                  class="text-white"
+                >
+                  <i class="fab fa-instagram fa-lg"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label="Link to Calm's Twitter"
+                  class="text-white"
+                >
+                  <i class="fab fa-twitter fa-lg"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="row copyright">
-          <div class="col-md-6 mb-3 mb-md-0">
-            <p class="mb-0">© 2025 Calm. All rights reserved.</p>
-          </div>
-          <div class="col-md-6 text-md-end">
-            <p class="mb-0">Made with ❤️ for a calmer world</p>
+        <div class="row mt-5">
+          <div class="col-md-12 text-center">
+            <p class="mb-0">Copyright © 2025 Calm. All rights reserved</p>
           </div>
         </div>
       </div>
@@ -663,6 +974,20 @@
 
     <!-- Custom JavaScript for Navbar Scroll Effect -->
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const faqQuestions = document.querySelectorAll(".faq-question");
+        faqQuestions.forEach((question) => {
+          question.addEventListener("click", function () {
+            const answer = this.nextElementSibling;
+            answer.classList.toggle("show");
+            if (answer.classList.contains("show")) {
+              answer.style.display = "block";
+            } else {
+              answer.style.display = "none";
+            }
+          });
+        });
+      });
       window.addEventListener("scroll", function () {
         const navbar = document.querySelector(".navbar");
         if (window.scrollY > 50) {
